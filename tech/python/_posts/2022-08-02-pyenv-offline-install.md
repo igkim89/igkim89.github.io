@@ -1,8 +1,8 @@
 ---
 layout: post
 author: author1
-title: hello world
-categories: [tech, python]
+title: Pyenv offline install
+categories: [python]
 description: >
   안녕하세요
 ---

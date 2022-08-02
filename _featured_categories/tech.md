@@ -10,7 +10,8 @@ description: >
 
 ## Tech
 
-#### Category
+### Category
 
+* [Python](https://igkim89.github.io/category/python/)
 * [Redis](https://igkim89.github.io/category/redis/)
 * [Kafka](https://igkim89.github.io/category/kafka/)
