@@ -1,9 +1,11 @@
 ---
 layout: post
+author: author1
 title: hello world
 description: >
   안녕하세요
-tags: [Tech]
 ---
 
 # Hello, World!
+
+## 헬로헬로

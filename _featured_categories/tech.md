@@ -1,7 +1,7 @@
 ---
 layout: list
 title: Tech
-slug: Tech
+slug: tech
 menu: true
 order: 1
 description: >
