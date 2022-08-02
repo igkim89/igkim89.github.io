@@ -2,7 +2,7 @@
 layout: post
 author: author1
 title: Redis sentinel install
-categories: [tech, redis]
+categories: [redis]
 description: >
   Redis sentinel mode install
 ---
