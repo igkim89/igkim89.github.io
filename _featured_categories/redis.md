@@ -1,7 +1,7 @@
 ---
 layout: list
 title: Redis
-slug: redis
+slug: tech/redis
 menu: false
 description: >
   Redis guide
