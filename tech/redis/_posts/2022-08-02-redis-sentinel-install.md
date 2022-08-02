@@ -1,7 +1,8 @@
 ---
 layout: post
 author: author1
-title: Redis sentinel install tmp
+title: Redis sentinel install
+categories: [tech, redis]
 description: >
   Redis sentinel mode install
 ---
