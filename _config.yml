@@ -71,7 +71,14 @@ paginate_path:         /page-:num/
 # Customizaton
 # ========================================================================================
 
-# Sidebar image and theme color of the site.
+defaults:
+  - scope:
+      path: hydejack/
+    values:
+      accent_image: /assets/img/igkim-sidebar-bg.jpg
+      accent_color: '#ff817f'
+
+  # Sidebar image and theme color of the site.
 accent_image:          /assets/img/igkim-sidebar-bg.jpg
 accent_color:          '#ff817f'
 
