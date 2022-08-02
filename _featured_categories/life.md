@@ -7,3 +7,5 @@ order: 2
 description: >
   일기를 써보자
 ---
+
+## Life

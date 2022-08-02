@@ -8,7 +8,7 @@ description: >
 
 ---
 
-### Category
+## Tech
 
 #### [Redis](https://igkim89.github.io/category/redis/)
 
