@@ -7,6 +7,6 @@ description: >
   안녕하세요
 ---
 
-# Hello, World!
+# Pyenv offline install
 
 ## 헬로헬로
