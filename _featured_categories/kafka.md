@@ -1,8 +1,8 @@
 ---
 layout: list
-title: Redis
-slug: redis
+title: Kafka
+slug: kafka
 menu: false
 description: >
-  Redis guide
+  kafka guide
 ---

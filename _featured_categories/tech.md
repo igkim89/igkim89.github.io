@@ -5,11 +5,11 @@ slug: tech
 menu: true
 order: 1
 description: >
-  기술 블로그
+
 ---
 
-## 카테고리
+### Category
 
-### [Redis](https://igkim89.github.io/category/tech/redis/)
+#### [Redis](https://igkim89.github.io/category/redis/)
 
-### Test
+#### [Kafka](https://igkim89.github.io/category/kafka/)
