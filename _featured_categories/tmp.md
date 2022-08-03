@@ -1,11 +1,11 @@
 ---
 layout: list
-title: tmp
-slug: tmp
+title: Tip
+slug: tip
 menu: true
 order: 3
 description: >
 ---
 
-## 임시
+## Tip
 
