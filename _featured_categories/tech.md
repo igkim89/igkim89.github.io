@@ -5,7 +5,6 @@ slug: tech
 menu: true
 order: 1
 description: >
-
 ---
 
 ## Tech
