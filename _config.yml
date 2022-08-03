@@ -27,9 +27,7 @@ title:                 Lighthouse
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  A Jekyll theme with JavaScript powers. "Best Theme by a Mile".
-  Combines the best of static sites and modern web apps.
-  Open `_config.yml` to edit this text.
+  기록용 블로그
 
 # A shorter description for the sidebar.
 tagline:               >
