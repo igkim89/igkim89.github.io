@@ -38,9 +38,9 @@ fatal: unable to connect to github.com:
 github.com[0: 52.78.231.108]: errno=Connection timed out
 ~~~
 
-```shell script
+~~~shell
 fatal: Unable to look up github.com (port 9418)
-```
+~~~
 
 ##### 1.2.1. https 설정 추가
 
@@ -92,7 +92,7 @@ https 설정을 위해 스크립트 파일을 수정한다.
 #### 1.3. pyenv를 설치할 offline 서버로 설치 파일 전송
 
 위에서 작업한 디렉토리 전체를 압축한다.  
-```shell script
+```shell
 [igkim@igkim-vm installer]$ tar cvfz pyenv.tgz pyenv-installer-master
 ```
 
@@ -105,7 +105,7 @@ offline 서버로 두 파일을 이동한다.
 
 압축 해제 후 offline installer를 실행한다.
 
-```shell script
+```shell
 [igkim@igkim-offline ~]$ tar xvfz pyenv.tgz
 [igkim@igkim-offline ~]$ cd pyenv-installer-master
 [igkim@igkim-vm pyenv-installer-master]$ bin/pyenv-offline-installer
@@ -113,20 +113,20 @@ offline 서버로 두 파일을 이동한다.
 
 설치 완료 후 환경변수를 설정한다.
 
-```shell script
+```shell
 [igkim@igkim-vm pyenv-installer-master]$ vi ~/.bashrc
 ```
 
-```shell script
+~~~shell
 export PYENV_ROOT="$HOME/.pyenv" 
 export PATH="$PYENV_ROOT/bin:$PATH" 
 eval "$(pyenv init --path)" 
 
 eval "$(pyenv init -)" 
 eval "$(pyenv virtualenv-init -)" 
-```
+~~~
 
-```shell script
+```shell
 [igkim@igkim-vm pyenv-installer-master]$ source ~/.bashrc
 ```
 
