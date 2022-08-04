@@ -53,7 +53,6 @@ https 설정을 위해 스크립트 파일을 수정한다.
 12 line `USE_HTTPS=true` 추가
 
 ~~~shell
-// file: "download-pyenv-package.sh"
   1 #!/usr/bin/env bash
   2 
   3 checkout() {
@@ -96,10 +95,7 @@ https 설정을 위해 스크립트 파일을 수정한다.
 [igkim@igkim-vm installer]$ tar cvfz pyenv.tgz pyenv-installer-master
 ```
 
-원하는 버전의 Python 설치 파일을 다운로드한다.  
-[https://www.python.org/ftp/python](https://www.python.org/ftp/python)
-
-offline 서버로 두 파일을 이동한다.
+offline 서버로 압축파일을 전송한다.
 
 #### 1.4. pyenv 설치
 
@@ -108,13 +104,13 @@ offline 서버로 두 파일을 이동한다.
 ```shell
 [igkim@igkim-offline ~]$ tar xvfz pyenv.tgz
 [igkim@igkim-offline ~]$ cd pyenv-installer-master
-[igkim@igkim-vm pyenv-installer-master]$ bin/pyenv-offline-installer
+[igkim@igkim-offline pyenv-installer-master]$ bin/pyenv-offline-installer
 ```
 
 설치 완료 후 환경변수를 설정한다.
 
 ```shell
-[igkim@igkim-vm pyenv-installer-master]$ vi ~/.bashrc
+[igkim@igkim-offline pyenv-installer-master]$ vi ~/.bashrc
 ```
 
 ~~~shell
@@ -127,11 +123,36 @@ eval "$(pyenv virtualenv-init -)"
 ~~~
 
 ```shell
-[igkim@igkim-vm pyenv-installer-master]$ source ~/.bashrc
+[igkim@igkim-offline pyenv-installer-master]$ source ~/.bashrc
 ```
 
 ## 2. python 설치
 **외부 네트워크를 사용하지 않는 offline 환경 (e.g. private network) 에서 python을 설치한다.**  
 **사전에 pyenv 설치가 필요하다.**
+**예제에서는 3.8.9 버전을 설치한다.**
 
+#### 2.1. python 설치파일 다운로드
+
+원하는 버전의 Python 설치 파일을 다운로드한다.  
+[https://www.python.org/ftp/python](https://www.python.org/ftp/python)
+
+```shell
+[igkim@igkim-offline ~]$ mkdir ~/.pyenv/cache
+[igkim@igkim-offline ~]$ mv Python-3.8.9.tar.xz ~/.pyenv/cache/
+```
+
+#### 2.2. python 설치
+
+```shell
+[igkim@igkim-offline ~]$ pyenv install -v 3.8.9
+```
+
+필요한 라이브러리 및 컴파일러가 설치되지 않은 경우 에러가 발생한다. 
+(e.g. patch, C compiler)
+추가로 설치를 진행한다.
+
+```shell
+[igkim@igkim-offline ~]$ yum install patch
+[igkim@igkim-offline ~]$ yum groupinstall "Development Tools"
+```
 
