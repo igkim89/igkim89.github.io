@@ -12,7 +12,7 @@ description: >
 * toc  
 {:toc}
 
-* toc
+* toc  
 {:toc .large-only}
 
 ## 1. pyenv offline install
