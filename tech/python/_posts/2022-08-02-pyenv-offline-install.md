@@ -33,10 +33,10 @@ description: >
 완료 후, 현재 디렉토리에 `pyenv-package.tar.gz` 파일이 정상적으로 생성되었는지 확인한다.  
 아래와 같은 에러가 발생한다면 `1.2.1. https 설정 추가` 를 수행한다.
 
-```shell script
+~~~shell
 fatal: unable to connect to github.com:
 github.com[0: 52.78.231.108]: errno=Connection timed out
-```
+~~~
 
 ```shell script
 fatal: Unable to look up github.com (port 9418)
@@ -46,13 +46,14 @@ fatal: Unable to look up github.com (port 9418)
 
 https 설정을 위해 스크립트 파일을 수정한다.
 
-```shell script
+~~~shell
 [igkim@igkim-vm pyenv-installer-master]$ vi bin/download-pyenv-package.sh
-```
+~~~
 
 12 line `USE_HTTPS=true` 추가
 
-```shell script
+~~~shell
+# file: "download-pyenv-package.sh"
   1 #!/usr/bin/env bash
   2 
   3 checkout() {
@@ -84,7 +85,7 @@ https 설정을 위해 스크립트 파일을 수정한다.
  29 tar -zcf "$PYENV_PACKAGE_ARCHIVE" -C "$TMP_DIR" .
  30 
  31 rm -rf $TMP_DIR
-```
+~~~
 
 수정 후 pyenv package를 다운로드한다.
 
