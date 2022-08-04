@@ -76,6 +76,12 @@ paginate_path:         /page-:num/
 #      accent_image: /assets/img/igkim-sidebar-bg.jpg
 #      accent_color: '#ff817f'
 
+defaults:
+  - scope:
+      type: posts
+      values:
+        comments: true
+
   # Sidebar image and theme color of the site.
 accent_image:          /assets/img/igkim-sidebar-bg.jpg
 accent_color:          '#ff817f'

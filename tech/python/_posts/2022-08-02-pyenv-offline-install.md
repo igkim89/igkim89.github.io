@@ -3,7 +3,6 @@ layout: post
 author: author1
 title: Pyenv install
 categories: [python]
-comments: true
 description: >
   Python 가상환경에 사용하는 pyenv 설치에 대해 다룬다.
 ---
