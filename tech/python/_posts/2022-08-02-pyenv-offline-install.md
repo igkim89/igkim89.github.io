@@ -12,8 +12,8 @@ description: >
 * toc  
 {:toc}
 
-1. toc
-{:toc}
+* toc
+{:toc .large-only}
 
 ## 1. pyenv offline install
 **외부 네트워크를 사용하지 않는 offline 환경 (e.g. private network) 에서 pyenv를 설치한다.**
