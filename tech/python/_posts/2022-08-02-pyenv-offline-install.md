@@ -8,10 +8,14 @@ description: >
 ---
 
 # Pyenv install  
-### 1. pyenv offline install
+
+* toc
+{:toc}
+
+## 1. pyenv offline install
 **외부 네트워크를 사용하지 않는 offline 환경 (e.g. private network) 에서 pyenv를 설치한다.**
 
-online 환경에서 pyenv-installer를 다운로드한다.  
+#### 1.1. online 환경에서 pyenv-installer를 다운로드한다.  
 [https://github.com/pyenv/pyenv-installer](https://github.com/pyenv/pyenv-installer)  
 [https://github.com/pyenv/pyenv-installer/archive/refs/heads/master.zip](https://github.com/pyenv/pyenv-installer/archive/refs/heads/master.zip)
 
