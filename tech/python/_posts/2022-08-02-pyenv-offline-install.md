@@ -9,6 +9,10 @@ description: >
 
 # Pyenv install  
 
+* toc  
+{:toc}
+
+1. toc
 {:toc}
 
 ## 1. pyenv offline install
