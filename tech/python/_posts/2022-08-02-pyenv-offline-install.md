@@ -18,13 +18,13 @@ description: >
 [https://github.com/pyenv/pyenv-installer](https://github.com/pyenv/pyenv-installer)  
 [https://github.com/pyenv/pyenv-installer/archive/refs/heads/master.zip](https://github.com/pyenv/pyenv-installer/archive/refs/heads/master.zip)
 
-```shell script
+```bash
 [igkim@igkim-vm installer]$ wget https://github.com/pyenv/pyenv-installer/archive/refs/heads/master.zip
 ```
 
 #### 1.2. pyenv package를 다운로드
 
-```shell script
+```bash
 [igkim@igkim-vm installer]$ unzip master.zip
 [igkim@igkim-vm installer]$ cd pyenv-installer-master
 [igkim@igkim-vm pyenv-installer-master]$ bin/download-pyenv-package.sh
