@@ -22,7 +22,7 @@ description: >
 [igkim@igkim-vm installer]$ wget https://github.com/pyenv/pyenv-installer/archive/refs/heads/master.zip
 ```
 
-#### 1.2. pyenv package를 다운로드
+#### 1.2. pyenv package 다운로드
 
 ```bash
 [igkim@igkim-vm installer]$ unzip master.zip
@@ -53,7 +53,7 @@ https 설정을 위해 스크립트 파일을 수정한다.
 12 line `USE_HTTPS=true` 추가
 
 ~~~shell
-# file: "download-pyenv-package.sh"
+// file: "download-pyenv-package.sh"
   1 #!/usr/bin/env bash
   2 
   3 checkout() {
