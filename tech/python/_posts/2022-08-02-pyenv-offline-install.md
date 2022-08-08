@@ -149,10 +149,10 @@ eval "$(pyenv virtualenv-init -)"
 
 필요한 라이브러리 및 컴파일러가 설치되지 않은 경우 에러가 발생한다. 
 (e.g. patch, C compiler)
-추가로 설치를 진행한다.
+추가로 필요한 라이브러리 및 컴파일러를 설치한다.
 
 ```shell
-[igkim@igkim-offline ~]$ yum install patch
+[igkim@igkim-offline ~]$ yum install patch bzip2-devel ncurses-devel
 [igkim@igkim-offline ~]$ yum groupinstall "Development Tools"
 ```
 
