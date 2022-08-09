@@ -16,7 +16,7 @@ description: >
 예를 들면, 다음과 같은 코드는  
 ```
 {% raw %}
-    {{ ds_nodash }}
+{{ ds_nodash }}
 {% endraw %}
 ``` 
 
