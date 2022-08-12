@@ -8,4 +8,4 @@ description: >
 
 # HTTPS 인증서 강제 삭제하기
 
-![crt-01](img/crt-01.png)
+![crt-01](/img/crt-01.png)
