@@ -23,7 +23,7 @@ PrestoSQL이라는 이름을 더 이상 쓸 수 없게 되자 Trino로 이름을
 
 ## 2. Trino cluster install
 
-On-premise 환경의 Rocky 8 OS에 설치한다.
+Rocky 8 OS에 코디네이터 1대, 워커 2대로 설치한다.
 
 #### 2.1. 기본 서버 설정
 
@@ -85,6 +85,22 @@ node.data-dir=/var/trino/data
 -Djdk.nio.maxCachedBufferSize=2000000
 -XX:+UnlockDiagnosticVMOptions
 -XX:+UseAESCTRIntrinsics
+~~~
+
+* Trino 설정
+
+~~~shell
+[igkim@trino ~]$ vi $TRINO_HOME/etc/config.properties
+~~~
+
+* * 코디네이터
+~~~shell
+[igkim@trino ~]$ 
+~~~
+
+* * 워커
+~~~shell
+[igkim@trino ~]$ 
 ~~~
 
 
