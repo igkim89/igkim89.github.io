@@ -44,11 +44,11 @@ igkim     hard    nofile  131072
 https://repo1.maven.org/maven2/io/trino/trino-server/392/trino-server-392.tar.gz
 
 * 노드 설정
-{% raw %}
 ```shell
 [igkim@trino ~]$ vi $TRINO_HOME/etc/node.properties
 ```
 ```
+12
 # Cluster name (소문자 영숫자 문자로 시작해야 하며 소문자 영숫자 또는 밑줄(_) 문자만 포함할 수 있다.)
 node.environment=production
 
@@ -58,7 +58,6 @@ node.id=trino-coordinator
 # Log 및 기타 데이터 저장 경로
 node.data-dir=/var/trino/data
 ```
-{% endraw %}
 
 * JVM 설정
 ```shell
