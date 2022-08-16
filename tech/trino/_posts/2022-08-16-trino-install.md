@@ -33,7 +33,6 @@ On-premise 환경의 Rocky 8 OS에 설치한다.
 ```shell
 [igkim@trino ~]$ vi /etc/security/limits.conf
 ```
-
 ```
 igkim     soft    nofile  131072
 igkim     hard    nofile  131072
