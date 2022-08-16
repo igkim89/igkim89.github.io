@@ -15,3 +15,4 @@ description: >
 * [Redis](https://igkim89.github.io/category/redis/)
 * [Kafka](https://igkim89.github.io/category/kafka/)
 * [Airflow](https://igkim89.github.io/category/airflow/)
+* [Trino](https://igkim89.github.io/category/trino/)
