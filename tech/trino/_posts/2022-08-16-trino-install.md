@@ -30,13 +30,15 @@ On-premise 환경의 Rocky 8 OS에 설치한다.
 * 64비트 버전의 Java 17이 필요하며 최소 버전 17.0.3이 필요하다.
 * 파이썬 버전 2.6.x, 2.7.x 또는 3.x이 필요하다.
 * 파일 오픈 개수 설정
-```shell
+
+~~~shell
 [igkim@trino ~]$ vi /etc/security/limits.conf
-```
-```
+~~~
+
+~~~shell
 igkim     soft    nofile  131072
 igkim     hard    nofile  131072
-```
+~~~
 
 #### 2.2. 설치 및 환결 설정
 
@@ -44,9 +46,11 @@ igkim     hard    nofile  131072
 https://repo1.maven.org/maven2/io/trino/trino-server/392/trino-server-392.tar.gz
 
 * 노드 설정
+
 ~~~shell
 [igkim@trino ~]$ vi $TRINO_HOME/etc/node.properties
 ~~~  
+
 ~~~shell
 # Cluster name (소문자 영숫자 문자로 시작해야 하며 소문자 영숫자 또는 밑줄(_) 문자만 포함할 수 있다.)
 node.environment=production
@@ -59,9 +63,11 @@ node.data-dir=/var/trino/data
 ~~~
 
 * JVM 설정
+
 ~~~shell
 [igkim@trino ~]$ vi $TRINO_HOME/etc/jvm.config
-~~~  
+~~~
+
 ~~~shell
 -server
 -Xmx16G
