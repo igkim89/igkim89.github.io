@@ -21,11 +21,11 @@ PrestoSQL이라는 이름을 더 이상 쓸 수 없게 되자 Trino로 이름을
 
 이기종 데이터 소스에 동일한 ANSI SQL이 사용 가능하며 퍼포먼스가 좋아서 많이들 사용하는 Trino를 설치해본다.
 
-#### 1.1. Trino cluster install
+## 2. Trino cluster install
 
 On-premise 환경의 Rocky 8 OS에 설치한다.
 
-##### 1.1.1. 기본 서버 설정
+#### 2.1. 기본 서버 설정
 
 * 64비트 버전의 Java 17이 필요하며 최소 버전 17.0.3이 필요하다.
 * 파이썬 버전 2.6.x, 2.7.x 또는 3.x이 필요하다.
