@@ -43,7 +43,7 @@ igkim     hard    nofile  131072
 * 다운로드 및 압축 해제(압축 푼 디렉토리를 $TRINO_HOME 으로 정의한다.)  
 https://repo1.maven.org/maven2/io/trino/trino-server/392/trino-server-392.tar.gz
 
-* 노드 설정  
+* 노드 설정
 {% raw %}
 ```shell
 [igkim@trino ~]$ vi $TRINO_HOME/etc/node.properties
