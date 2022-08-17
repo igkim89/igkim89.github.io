@@ -88,17 +88,14 @@ node.data-dir=/var/trino/data
 ~~~
 
 * Trino 설정
-
 ~~~shell
 [igkim@trino ~]$ vi $TRINO_HOME/etc/config.properties
 ~~~
-
-* * 코디네이터
+  * 코디네이터
 ~~~shell
 [igkim@trino ~]$ 
 ~~~
-
-* * 워커
+  * 워커
 ~~~shell
 [igkim@trino ~]$ 
 ~~~
