@@ -93,11 +93,26 @@ node.data-dir=/var/trino/data
 ~~~
   * 코디네이터
 ~~~shell
-[igkim@trino ~]$ 
+# 해당 노드가 코디네이터인 경우 true로 설정
+coordinator=true
+
+# Node scheduler를 코디네이터에서 실행할지 여부.
+# 쿼리 성능을 위해서는, 클러스터가 단일 노드일 경우를 제외한 경우 false 권장
+node-scheduler.include-coordinator=false
+
+# HTTP 서버 Port
+http-server.http.port=18080
+
+# 모든 Trino 인스턴스는 시작 시 전체 노드를 찾기 위한 검색 서비스에 등록하고 등록을 활성 상태로 유지하기 위해 지속적으로 하트비트를 보낸다. 
+# Trino 코디네이터의 호스트 및 포트와 동일하게 수정한다. 
+# 코디네이터에서 HTTPS를 설정한 경우 https:// 로 설정한다.
+discovery.uri=http://192.168.1.41:18080
 ~~~
   * 워커
 ~~~shell
-[igkim@trino ~]$ 
+coordinator=false
+http-server.http.port=18080
+discovery.uri=http://192.168.1.41:18080
 ~~~
 
 
