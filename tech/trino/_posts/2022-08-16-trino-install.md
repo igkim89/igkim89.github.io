@@ -13,13 +13,14 @@ description: >
 
 PrestoSQL로 알려졌던 빅데이터용 분산 SQL 쿼리 엔진  
 PrestoSQL에서 Trino로 프로젝트명이 변경되었다.  
-Facebook에서 개발된 Presto가 점점 Facebook에 종속되어 간다고 느낀 몇몇 개발진들이 나와서  
-완전한 오픈소스로 다시 만들어낸 뭐 그런 느낌  
+Facebook에서 개발된 Presto지만 개발자들은 오픈소스 프로젝트가 되길 희망했다.
+그러나 점점 Facebook에 종속되어 간다고 느낀 몇몇 개발진들이 Facebook을 나와서  
+오픈소스 프로젝트로 다시 만들어낸 뭐 그런 느낌  
 실제로 PrestoSQL을 만들자마자 Facebook측에서는 Presto 상표권을 신청했고
 PrestoSQL이라는 이름을 더 이상 쓸 수 없게 되자 Trino로 이름을 변경했다고 한다.  
 뭐 그런 역사가 있고..
 
-이기종 데이터 소스에 동일한 ANSI SQL이 사용 가능하며 퍼포먼스가 좋아서 많이들 사용하는 Trino를 설치해본다.
+다양한 데이터 소스에 동일한 ANSI SQL이 사용 가능하며 퍼포먼스가 좋아서 많이들 사용하는 Trino를 설치해본다.
 
 ## 2. Trino cluster install
 
@@ -120,6 +121,27 @@ http-server.http.port=18080
 discovery.uri=http://192.168.1.41:18080
 ~~~
 
+* 로그 설정
+
+~~~shell
+[igkim@trino ~]$ vi $TRINO_HOME/etc/log.properties
+~~~
+
+~~~shell
+# Log level = DEBUG, INFO, WARN, ERROR
+io.trino=INFO
+~~~
+
+* 서버 실행
+
+~~~shell
+[igkim@trino ~]$ $TRINO_HOME/bin/launcher start
+~~~
+
+여기까지는 단순히 Trino 공식 document에서 알려주는 기본 설정값이다.
+자세한 부분은 공식 document를 참고하도록 하자.
+
+https://trino.io/docs/current/index.html
 
 
 
