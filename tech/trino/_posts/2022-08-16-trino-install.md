@@ -88,10 +88,12 @@ node.data-dir=/var/trino/data
 ~~~
 
 * Trino 설정
+
 ~~~shell
 [igkim@trino ~]$ vi $TRINO_HOME/etc/config.properties
 ~~~
   * 코디네이터
+  
 ~~~shell
 # 해당 노드가 코디네이터인 경우 true로 설정
 coordinator=true
@@ -108,7 +110,9 @@ http-server.http.port=18080
 # 코디네이터에서 HTTPS를 설정한 경우 https:// 로 설정한다.
 discovery.uri=http://192.168.1.41:18080
 ~~~
+
   * 워커
+  
 ~~~shell
 coordinator=false
 http-server.http.port=18080
