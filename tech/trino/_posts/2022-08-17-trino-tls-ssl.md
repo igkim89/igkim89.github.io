@@ -22,9 +22,36 @@ description: >
 
 ## 2. TLS 설정
 
+인증서를 발급받아야 하는데 내부망 개발 환경이므로 `self-signed certificates`를 통해 구성해본다.
 
+#### 2.1. ROOT 인증서 생성
 
-#### 2.1. 
+* 디렉토리 생성
+
+~~~shell
+[igkim@trino ~]$ mkdir rootca
+[igkim@trino ~]$ mkdir trino
+~~~
+
+* ROOT CA RSA Key 생성
+
+~~~shell
+[igkim@trino ~]$ cd rootca
+[igkim@trino rootca]$ openssl genrsa -aes256 -out rootca.key 2048
+
+Generating RSA private key, 2048 bit long modulus (2 primes)
+....+++++
+.................................................................................................+++++
+e is 65537 (0x010001)
+Enter pass phrase for rootca.key: {Root RSA Key Password 입력}
+Verifying - Enter pass phrase for rootca.key: {Root RSA Key Password 입력}
+~~~
+
+* ROOT CSR Config 작성
+
+~~~shell
+[igkim@trino rootca]$ vi rootca_openssl.conf
+~~~
 
 
 ## 3. Configured shared secret

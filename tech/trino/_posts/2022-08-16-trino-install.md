@@ -44,7 +44,7 @@ igkim     hard    nofile  131072
 #### 2.2. 설치 및 환결 설정
 
 * 다운로드 및 압축 해제(압축 푼 디렉토리를 $TRINO_HOME 으로 정의한다.)  
-https://repo1.maven.org/maven2/io/trino/trino-server/392/trino-server-392.tar.gz
+[Trino v.392 Download](https://repo1.maven.org/maven2/io/trino/trino-server/392/trino-server-392.tar.gz)
 
 * 노드 설정
 
@@ -141,7 +141,7 @@ io.trino=INFO
 여기까지는 단순히 Trino 공식 document에서 알려주는 기본 설정값이다.
 자세한 부분은 공식 document를 참고하도록 하자.
 
-https://trino.io/docs/current/index.html
+[Trino 공식 Document](https://trino.io/docs/current/index.html)
 
 
 
