@@ -92,9 +92,10 @@ node.data-dir=/var/trino/data
 ~~~shell
 [igkim@trino ~]$ vi $TRINO_HOME/etc/config.properties
 ~~~
-  * 코디네이터
-  
+
 ~~~shell
+## 코디네이터
+
 # 해당 노드가 코디네이터인 경우 true로 설정
 coordinator=true
 
@@ -111,9 +112,9 @@ http-server.http.port=18080
 discovery.uri=http://192.168.1.41:18080
 ~~~
 
-  * 워커
-  
 ~~~shell
+## 워커
+
 coordinator=false
 http-server.http.port=18080
 discovery.uri=http://192.168.1.41:18080
