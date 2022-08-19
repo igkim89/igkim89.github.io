@@ -270,7 +270,8 @@ rootca.crt 인증서 파일을 클라이언트로 가져온다.
 [igkim@trino ~]$ openssl rand 512 | base64
 ~~~
 
-* Trino 설정 파일 수정 (전체 노드)
+* Trino 설정 파일 수정 (전체 노드)  
+위에서 생성한 Secret 값을 `internal-communication.shared-secret` 키값에 설정한다.
 
 ~~~shell
 [igkim@trino ~]$ vi $TRINO_HOME/etc/config/properties
