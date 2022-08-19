@@ -253,10 +253,10 @@ rootca.crt 인증서 파일을 클라이언트로 가져온다.
 
 * 인증서 등록
   * root.ca.crt 파일을 실행한다.  
-![trino-tls-01](/img/trino-tls-01.png)
-![trino-tls-02](/img/trino-tls-02.png)
-![trino-tls-03](/img/trino-tls-03.png)
-![trino-tls-04](/img/trino-tls-04.png)
+![trino-tls-01](/img/tech/trino/trino-tls-01.png)
+![trino-tls-02](/img/tech/trino/trino-tls-02.png)
+![trino-tls-03](/img/tech/trino/trino-tls-03.png)
+![trino-tls-04](/img/tech/trino/trino-tls-04.png)
 
 인증서 설치가 완료되었다.
 
@@ -334,6 +334,6 @@ Adding password for user igkim
 ## 5. Trino Web UI 접속
 
 인증서를 배포한 클라이언트에서 Trino Web UI로 접속한다.  
-![trino-tls-05](/img/trino-tls-05.png)
+![trino-tls-05](/img/tech/trino/trino-tls-05.png)
 
 HTTPS 및 Password auth가 적용된 것을 확인할 수 있다.

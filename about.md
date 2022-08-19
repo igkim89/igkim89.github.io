@@ -7,6 +7,4 @@ menu: true
 order: 4
 ---
 
-To-do
-
-프로필 작성
+안녕하세요.
