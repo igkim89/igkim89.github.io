@@ -13,9 +13,9 @@ description: >
 
 PrestoSQL로 알려졌던 빅데이터용 분산 SQL 쿼리 엔진  
 PrestoSQL에서 Trino로 프로젝트명이 변경되었다.  
-Facebook에서 개발된 Presto지만 개발자들은 오픈소스 프로젝트가 되길 희망했다.
-그러나 점점 Facebook에 종속되어 간다고 느낀 몇몇 개발진들이 Facebook을 나와서  
-오픈소스 프로젝트로 다시 만들어낸 뭐 그런 느낌  
+애초에 Presto 개발자들은 오픈소스 프로젝트가 되길 희망했으나  
+Presto는 점점 Facebook에 종속되어갔고  
+거기에 실망한 몇몇 개발진들이 Facebook을 나와서 오픈소스 프로젝트로 다시 만들어낸 뭐 그런 느낌  
 실제로 PrestoSQL을 만들자마자 Facebook측에서는 Presto 상표권을 신청했고
 PrestoSQL이라는 이름을 더 이상 쓸 수 없게 되자 Trino로 이름을 변경했다고 한다.  
 뭐 그런 역사가 있고..
