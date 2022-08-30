@@ -11,7 +11,7 @@ description: >
 
 ## 1. Trino Security
 
-기본 설정으로 Trino를 설치해보면 로그인 과정은 있지만 id는 아무렇게나 입력해도 되며 password는 입력받지 않는다.  
+기본 설정으로 Trino를 설치해보면 아무나 접속이 가능하다.
 그러므로 보안 설정을 적용해보자.  
 여러 방법이 있지만 간단한 방법 중 하나인 `Password file authentication`으로 진행을 해본다.  
 
