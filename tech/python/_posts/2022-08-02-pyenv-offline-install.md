@@ -149,10 +149,26 @@ eval "$(pyenv virtualenv-init -)"
 
 필요한 라이브러리 및 컴파일러가 설치되지 않은 경우 에러가 발생한다. 
 (e.g. patch, C compiler)
-추가로 필요한 라이브러리 및 컴파일러를 설치한다.
+추가로 필요한 라이브러리 및 컴파일러를 설치한 후 python을 다시 설치한다.
 
 ```shell
-[igkim@igkim-offline ~]$ yum install patch bzip2-devel ncurses-devel
+[igkim@igkim-offline ~]$ yum install patch bzip2-devel ncurses-devel readline-devel sqlite-devel
 [igkim@igkim-offline ~]$ yum groupinstall "Development Tools"
 ```
 
+## 3. 설치 확인
+
+local python version 설정 후 가상환경을 생성한다.
+
+```shell
+[igkim@igkim-offline ~]$ pyenv local 3.8.9
+[igkim@igkim-offline ~]$ python --version
+
+Python 3.8.9
+```
+
+```shell
+[igkim@igkim-offline ~]$ pyenv virtualenv igkim-3.8.9
+
+(igkim-3.8.9) [igkim@igkim-docker ~]$ 
+```
