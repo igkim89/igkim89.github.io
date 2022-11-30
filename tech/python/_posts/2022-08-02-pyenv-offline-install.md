@@ -152,7 +152,7 @@ eval "$(pyenv virtualenv-init -)"
 추가로 필요한 라이브러리 및 컴파일러를 설치한 후 python을 다시 설치한다.
 
 ```shell
-[igkim@igkim-offline ~]$ yum install patch bzip2-devel ncurses-devel readline-devel sqlite-devel
+[igkim@igkim-offline ~]$ yum install patch bzip2-devel ncurses-devel readline-devel sqlite-devel openssl-devel
 [igkim@igkim-offline ~]$ yum groupinstall "Development Tools"
 ```
 
