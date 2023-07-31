@@ -30,7 +30,7 @@ description: >
 [igkim@igkim-vm pyenv-installer-master]$ bin/download-pyenv-package.sh
 ```
 
-완료 후, 현재 디렉토리에 `pyenv-package.tar.gz` 파일이 정상적으로 생성되었는지 확인한다.  
+완료 후, bin 디렉토리에 `pyenv-package.tar.gz` 파일이 정상적으로 생성되었는지 확인한다.  
 아래와 같은 에러가 발생한다면 `1.2.1. https 설정 추가` 를 수행한다.
 
 ~~~shell
